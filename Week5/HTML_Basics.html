@@ -3,10 +3,15 @@
     <head>
         <title>Jennifer's Findings</title>
         <style>
+            @font-face {
+            font-family:"bebas-neue-by-fontfabric";
+            src:url("https://use.typekit.net/af/c54646/00000000000000007735c070/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c54646/00000000000000007735c070/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c54646/00000000000000007735c070/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:400;
+            }
             body {background-color: #f6f6f2;}
-            h2 {color: #388087; font-family: sans-serif; text-align: center;}
-            p {color:#4a9da3; font-family: sans-serif;}
-            ol {color:#4a9da3; font-family: sans-serif;}
+            h2 {color: #388087; font-family: sans-serif; text-align: center;font-size: 2em;}
+            p {color:#4a9da3; font-family: sans-serif;line-height: 1.6;}
+            ol {color:#4a9da3; font-family: sans-serif;line-height: 1.6;}
             table {
                     text-align: center;
                     font-family: sans-serif;
@@ -34,11 +39,39 @@
            form{text-align: center;}
            label{color:#4a9da3; font-family: sans-serif;}
            img{padding: 7px;}
-            
+           ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #98d8aa;
+                }
+            #menu li {
+                float: left;
+                }
+            #menu li a {
+                display: block;
+                color: white;
+                text-align: center;
+                font-family: 'bebas-neue-by-fontfabric';
+                font-weight: bold;
+                padding: 16px;
+                font-size: 20px;
+                text-decoration: none;
+                }
+            #menu li a:hover {
+                background-color: #8ac79b;
+                }
+
             
         </style>
     </head>
     <body>
+          <!--Menu Bar-->
+          <ul id="menu">
+            <li><a href="HTML_Basics.html">Experiment Details</a></li>
+            <li><a href="Investors.html">Investors</a></li>
+          </ul>
         <!--Description of the experiment-->
         <h2>DESCRIPTION</h2>
          <p><img src="caffeine.jpg" width="150" height="150" align="left" />
@@ -70,6 +103,7 @@
             <li>Group C was given a placebo</li>
             <li>Grade point averages were tracked throughout the term and averaged by group at the start of the semester, at midterm, and after final grades were submitted</li>
         </ol>
+       
         <!--Table of the experiment-->
         <h2>DATA RESULTS</h2>
         <table class="center">

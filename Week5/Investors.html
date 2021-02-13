@@ -3,12 +3,18 @@
     <head>
         <title>investorsPage</title>
         <style>
+           
+            @font-face {
+            font-family:"bebas-neue-by-fontfabric";
+            src:url("https://use.typekit.net/af/c54646/00000000000000007735c070/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c54646/00000000000000007735c070/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c54646/00000000000000007735c070/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+            font-display:auto;font-style:normal;font-weight:400;
+            }
             body {background-color: #f6f6f2;}
-            h2 {color: #388087; font-family: sans-serif; text-align: center;}
+            h2 {color: #388087; font-family: sans-serif; text-align: center; font-size: 2em;}
             p {color:#4a9da3; font-family: sans-serif;  line-height: 1.6;}
-            h3{color: #388087;font-family: sans-serif;}
-          .investorLogo{text-align: center;}
-          .investorInfo{text-align: center;}
+            h3{color: #388087;font-family: sans-serif; }
+          
+          #investorInfo{text-align: center;}
           table {
                     text-align: center;
                     font-family: sans-serif;
@@ -33,22 +39,80 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            .investor{border: 2px solid #db9444;}
+            #radtechLogo img{
+                    width: 375px; 
+                    height: 119px; 
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    }
+            #upstartLogo img{
+                    width: 375px; 
+                    height: 119px; 
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    }
+            #polytechLogo img{
+                    width: 375px; 
+                    height: 119px; 
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    }
+            #investorBackground{
+                border: 2px solid #80d8df; 
+                border-radius: 5px;
+                background-color: white;
+                                }
+            #total td {
+                font-size: 20px;
+                color: #388087;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #98d8aa;
+                }
+            li {
+                float: left;
+                }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                font-family: 'bebas-neue-by-fontfabric';
+                font-weight: bold;
+                padding: 16px;
+                text-decoration: none;
+                font-size: 20px;
+                }
+            li a:hover {
+                background-color: #8ac79b;
+                }
+
           
         </style>
     </head>
     <body>
+        <!--Menu Bar-->
+        <ul>
+            <li><a href="HTML_Basics.html">Experiment Details</a></li>
+            <li><a href="Investors.html">Investors</a></li>
+          </ul>
         <!--Investors Section of images and details-->
         <h2>INVESTORS</h2><br/>
-        <div class="investor"><div class="investorLogo"><img src="radtech-logo.png" /> </div>
-        <div class="investorInfo"><h3><strong>RadTech, Inc.</strong></h3>
+        <div id="investorBackground"><div id="radtechLogo"><img src="radtech-logo.png" /> </div>
+        <div id="investorInfo"><h3><strong>RadTech, Inc.</strong></h3>
             <p>RadTech is an industry leader providing advanced technology for conducting scientific research.</p></div></div><br/>
-        <div class="investorLogo"><img src="upstart-logo.png" /> </div>
-        <div class="investorInfo"><h3><strong>Upstart Pharmaceuticals</strong></h3>
-            <p>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective supplements to help fight fatigue and provide mental focus for students and business professionals. </p></div><br/>
-        <div class="investorLogo"><img src="polytech-logo.png" /> </div>
-        <div class="investorInfo"><h3><strong>Polytechnic University</strong></h3>
-            <p>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for students in biology and chemistry. </p></div><br/>
+        <div id="investorBackground"><div id="upstartLogo"><img src="upstart-logo.png" /> </div>
+        <div id="investorInfo"><h3><strong>Upstart Pharmaceuticals</strong></h3>
+            <p>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective supplements to help fight fatigue and provide mental focus for students and business professionals. </p></div></div><br/>
+        <div id="investorBackground"><div id="polytechLogo"><img src="polytech-logo.png" /> </div>
+        <div id="investorInfo"><h3><strong>Polytechnic University</strong></h3>
+            <p>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for students in biology and chemistry. </p></div></div><br/>
         <!--Table showing how much is given-->
         <h2>FUNDING AMOUNT</h2><br/>
         <Table class="center">
@@ -68,7 +132,7 @@
                 <td>Polytechnic University</td>
                 <td>$25,000</td>
             </tr>
-            <tr>
+            <tr id="total">
                 <td>TOTAL</td>
                 <td>$150,000</td>
             </tr>
