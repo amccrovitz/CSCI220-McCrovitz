@@ -1,0 +1,54 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232424;
+  }
+  
+  #menu li {
+    float: left;
+  }
+  
+  #menu li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    font-family: Helvetica;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  #menu li a:hover {
+    background-color: #DBDADA;
+  }
+  body{
+    background-color: #2a2c2c;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+  }
+#calendar{
+        font-family:Helvetica;
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid turquoise;
+}
+#calendar tr, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

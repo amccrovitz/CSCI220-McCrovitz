@@ -37,7 +37,7 @@ ul {
 }
 
 #menu li a:hover {
-  background-color: #8ac79b;
+  background-color: #DBDADA;
 }
 
 body {
@@ -49,7 +49,7 @@ body {
 
 .movie {
   border: 5px solid #AE252D;
-  margin-top: 200px;
+  margin-top: 175px;
   margin-left: 15px;
   margin-right: 15px;
   background-color: #232424;
@@ -82,14 +82,14 @@ p {
   z-index: -1;
 }
 .movieTitleRight {
-  font-size: 26pt;
+  font-size: 30pt;
   font-family: Helvetica;
   margin-bottom: -6px;
   padding-left: 150px;
   color: #DBDADA;
 }
 .movieTitleLeft {
-  font-size: 26pt;
+  font-size: 30pt;
   font-family: Helvetica;
   margin-bottom: -6px;
   padding-top: 100px;

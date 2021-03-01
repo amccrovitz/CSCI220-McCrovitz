@@ -1,0 +1,98 @@
+body{
+    background-image: url("bat-signal-alex-israel-mamo-arts-centre-le-corbusier-cite-radieuse_dezeen_2364_sq_0.jpg");
+    height: 1000px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232424;
+  }
+  
+  #menu li {
+    float: left;
+  }
+  
+  #menu li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    font-family: Helvetica;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  #menu li a:hover {
+    background-color: #DBDADA;
+  }
+  #contactForm{
+    border-radius: 5px;
+    background-color: #2a2c2c;
+    padding: 20px;
+    width: 50%;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #474747;
+    font-family: Helvetica;
+    color: #DBDADA;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #474747;
+    font-family: Helvetica;
+    color: #DBDADA;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: #DBDADA;
+    background-color: #AE252D;
+    font-family: helvetica;
+
+  }
+  
+  input[type=submit]:hover {
+    background-color:#AE252D;
+  }
+  textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #474747;
+    font-family: Helvetica;
+    color: #DBDADA;
+  }
+  .bottom-right {
+    position: absolute;
+    top: 500px;
+    right: 16px;
+  }

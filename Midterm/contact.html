@@ -2,8 +2,32 @@
 <html>
     <head>
         <title>Christopher Nolan Movies Contact</title>
+        <link rel="stylesheet" href="./contact.css" type="text/css">
     </head>
     <body>
+        <!--Menu Bar-->
+  <ul id="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="events.html">EVENTS</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
 
+  </ul>
+  <!--Contact form-->
+  <div id="contactForm" class="bottom-right">
+  <form action="mailto:amccrovitz@gmail.com" method="POST" name="emailForm" >
+    <input type="text" id="fname" name="firstname" placeholder="FULL NAME*">
+
+    <input type="email" id="email" name="email" placeholder="EMAIL*">
+
+    <select id="purpose" name="purpose">
+      <option value="eventSignUp">Event Sign Up</option>
+      <option value="mailingList">Mailing List</option>
+      <option value="usa">Feedback</option>
+    </select>
+    <textarea name="contactComment" rows="6" cols="20">COMMENTS</textarea>
+    <input type="submit" value="Submit">
+</form>
+</div>
     </body>
 </html>
