@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232424;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: #DBDADA;
+    text-align: center;
+    font-family: Helvetica;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #afaeae;
+}
+
+body {
+    margin: 0;
+    /*obtained from pexels*/
+    background-image: url("photos/theater-4062452_1920.jpg");
+    height: 1000px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shrine {
+    left: 250px;
+    position: absolute;
+}

@@ -1,197 +1,212 @@
 .top-left {
-  position: absolute;
-  top: 275px;
-  left: 16px;
+    position: absolute;
+    top: 275px;
+    left: 16px;
 }
 
 .col {
-  float: left;
+    float: left;
 }
 
 .left {
-  width: 50%;
-  float: left;
-
+    width: 50%;
+    float: left;
 }
-.right{
-  width: 40%;
-  float: right;
+
+.right {
+    width: 40%;
+    float: right;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #232424;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232424;
 }
 
 #menu li {
-  float: left;
+    float: left;
 }
 
 #menu li a {
-  display: block;
-  color: #DBDADA;;
-  text-align: center;
-  font-family: Helvetica;
-  padding: 16px;
-  font-size: 20px;
-  text-decoration: none;
+    display: block;
+    color: #DBDADA;
+    ;
+    text-align: center;
+    font-family: Helvetica;
+    padding: 16px;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 #menu li a:hover {
-  background-color: #afaeae;
+    background-color: #afaeae;
 }
 
 body {
-  background-color: #2a2c2c;
-  margin: 0;
+    background-color: #2a2c2c;
+    margin: 0;
 }
 
-.movie{
-  border: 5px solid #AE252D;
-  margin-top: 175px;
-  margin-left: 100px;
-  margin-right: 100px;
-  background-color: #232424;
-
+.movie {
+    border: 5px solid #AE252D;
+    margin-top: 175px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #232424;
 }
 
 .movieReverse {
-  border: 5px solid #AE252D;
-margin-top: 170px;
-margin-left: 100px;
-background-color: #232424;
-padding-right: 260px;
-margin-right: 100px;
+    border: 5px solid #AE252D;
+    margin-top: 170px;
+    margin-left: 100px;
+    background-color: #232424;
+    padding-right: 260px;
+    margin-right: 100px;
 }
 
 .titleText {
-  font-size: 4em;
-  font-family: helvetica;
-  color: #AE252D;
-  margin-bottom: -6px;
+    font-size: 4em;
+    font-family: helvetica;
+    color: #AE252D;
+    margin-bottom: -6px;
 }
 
 #titleBelowText {
-  color: #DBDADA;
-  padding-left: 12pt;
-  font-size: 17pt
+    color: #DBDADA;
+    padding-left: 12px;
+    font-size: 17pt
 }
 
 h1,
 p {
+    font-family: Helvetica;
+}
 
-  font-family: Helvetica;
-}
 .line {
-  position: absolute;;
-  border-left: 5px solid #AE252D;
-  height: 3200px;
-  left: 50%;
-  margin-left: -3px;
-  z-index: -1;
+    position: absolute;
+    ;
+    border-left: 5px solid #AE252D;
+    height: 3200px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
 }
+
 .movieTitleRight {
-  font-size: 30pt;
-  font-family: Helvetica;
-  margin-bottom: -6px;
-  padding-left: 220px;
-  color: #DBDADA;
+    font-size: 30pt;
+    font-family: Helvetica;
+    margin-bottom: -6px;
+    padding-left: 220px;
+    color: #DBDADA;
 }
 
 .movieInfoRight {
-  word-wrap: break-word;
-  color: #DBDADA;
-  padding-left: 220px;
-  line-height: 1.6;
-  clear: right;
-  
+    word-wrap: break-word;
+    color: #DBDADA;
+    padding-left: 220px;
+    line-height: 1.6;
+    clear: right;
 }
-.movieInfoLeft { 
-  word-wrap: break-word;
-color: #DBDADA;
-line-height: 1.6;
-max-width: 345px;
-padding-left: 90px;
-  
+
+.movieInfoLeft {
+    word-wrap: break-word;
+    color: #DBDADA;
+    line-height: 1.6;
+    max-width: 345px;
+    padding-left: 90px;
 }
+
 .movieLogo {
-  margin-top: 30pt;
-}
-.movieLogoRight{
-padding-left: 95px;
-margin: 30pt;
+    margin-top: 30px;
 }
 
-.column{
-  display: flex;
-}
-.row{
-  flex: 1;
-
-}
-#interstellarTitle{
-  font-size: 30pt;
-font-family: Helvetica;
-margin-bottom: -6px;
-color: #DBDADA;
-word-wrap: normal;
-padding-left: 150px;
-}
-#prestigeTitle{
-  font-size: 30pt;
-font-family: Helvetica;
-margin-bottom: -6px;
-color: #DBDADA;
-word-wrap: normal;
-
-padding-left: 130px;
-}
-#tenetTitle{
-  font-size: 30pt;
-font-family: Helvetica;
-margin-bottom: -6px;
-color: #DBDADA;
-word-wrap: normal;
-padding-left: 300px;
-}
-.movieInfoInterstellar{
-  word-wrap: break-word;
-color: #DBDADA;
-line-height: 1.6;
-max-width: 345px;
-padding-left: 110px;
-}
-.movieInfoPrestige{
-  word-wrap: break-word;
-color: #DBDADA;
-line-height: 1.6;
-max-width: 345px;
-padding-left: 80px;
-}
-.infoLink, a{
-  color: inherit;
-}
-.infoLink, a:link {
-  text-decoration: none;
- 
+.movieLogoRight {
+    padding-left: 95px;
+    margin: 30px;
 }
 
-.infoLink, a:visited {
-  text-decoration: none;
+.column {
+    display: flex;
 }
 
-.infoLink, a:hover {
-  text-decoration: underline;
+.row {
+    flex: 1;
 }
 
-.infoLink, a:active {
-  text-decoration: underline;
+#interstellarTitle {
+    font-size: 30pt;
+    font-family: Helvetica;
+    margin-bottom: -6px;
+    color: #DBDADA;
+    word-wrap: normal;
+    padding-left: 150px;
 }
-a:active, a:focus {
-  outline: 0;
-  border: none;
-  outline-style: none;
+
+#prestigeTitle {
+    font-size: 30pt;
+    font-family: Helvetica;
+    margin-bottom: -6px;
+    color: #DBDADA;
+    word-wrap: normal;
+    padding-left: 130px;
+}
+
+#tenetTitle {
+    font-size: 30pt;
+    font-family: Helvetica;
+    margin-bottom: -6px;
+    color: #DBDADA;
+    word-wrap: normal;
+    padding-left: 300px;
+}
+
+.movieInfoInterstellar {
+    word-wrap: break-word;
+    color: #DBDADA;
+    line-height: 1.6;
+    max-width: 345px;
+    padding-left: 110px;
+}
+
+.movieInfoPrestige {
+    word-wrap: break-word;
+    color: #DBDADA;
+    line-height: 1.6;
+    max-width: 345px;
+    padding-left: 80px;
+}
+
+.infoLink,
+a {
+    color: inherit;
+}
+
+.infoLink,
+a:link {
+    text-decoration: none;
+}
+
+.infoLink,
+a:visited {
+    text-decoration: none;
+}
+
+.infoLink,
+a:hover {
+    text-decoration: underline;
+}
+
+.infoLink,
+a:active {
+    text-decoration: underline;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+    border: none;
+    outline-style: none;
 }
