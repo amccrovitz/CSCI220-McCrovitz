@@ -1,5 +1,6 @@
 body{
-    background-image: url("bat-signal-alex-israel-mamo-arts-centre-le-corbusier-cite-radieuse_dezeen_2364_sq_0.jpg");
+  /* Image found here https://www.dezeen.com/2019/07/16/alex-israel-bat-signal-cite-radieuse-le-corbusier/ */
+    background-image: url("photos/bat-signal-alex-israel-mamo-arts-centre-le-corbusier-cite-radieuse_dezeen_2364_sq_0.jpg");
     height: 1000px;
     width: 100%;
     background-position: center;
@@ -21,7 +22,7 @@ ul {
   
   #menu li a {
     display: block;
-    color: gray;
+    color: #DBDADA;
     text-align: center;
     font-family: Helvetica;
     padding: 16px;
@@ -30,7 +31,7 @@ ul {
   }
   
   #menu li a:hover {
-    background-color: #DBDADA;
+    background-color: #afaeae;
   }
   #contactForm{
     border-radius: 5px;
@@ -62,6 +63,9 @@ ul {
     font-family: Helvetica;
     color: #DBDADA;
   }
+  #purpose{
+    padding-left: 16px;
+  }
   
   input[type=submit] {
     width: 100%;
@@ -74,10 +78,11 @@ ul {
     background-color: #AE252D;
     font-family: helvetica;
 
+
   }
   
   input[type=submit]:hover {
-    background-color:#AE252D;
+    background-color:#ce2d38;
   }
   textarea{
     width: 100%;
@@ -96,3 +101,12 @@ ul {
     top: 500px;
     right: 16px;
   }
+  .aboveForm{
+    position: absolute;
+    top: 400px;
+    right: 280px;
+    color: #DBDADA;
+    font-family:Helvetica;
+    font-size: 2em;
+  }
+  
