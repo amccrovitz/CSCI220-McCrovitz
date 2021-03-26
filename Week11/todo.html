@@ -5,19 +5,30 @@
     <title>
         Week 11 Assignment: Scripting in the Browser with JavaScript
     </title>
+    <link rel="stylesheet" href="./todo.css" type="text/css">
     <script src="./todo.js"></script>
+
+
 
 </head>
 
 <body>
-    <h1>TODO List</h1>
-    <ul>
-
+    <!--Title-->
+    <h1>todo List</h1>
+    <!--Todo list-->
+    <!--on click it uses the done function to add a class of checked to the list item-->
+    <ul onclick="done()">
     </ul>
+
+
     <input type="text" id="todoItem" name="todoItem">
-    <button id="addItemBtn" onclick="AddItem()">Add Item</button>
+    <!--uses addItem function on click event to store input-->
+    <button id="addItemBtn" onclick="addItem()">Add Item</button>
+    <!--uses clearList function to clear all stored list items-->
+    <button id="clearListBtn" onclick="clearList()">Clear List</button>
+
     <script>
-        //clears text box after submit
+        //clear box after submit
         document.getElementById('addItemBtn').addEventListener("click", function() {
             document.getElementById('todoItem').value = '';
         });
