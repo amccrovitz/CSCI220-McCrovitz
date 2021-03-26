@@ -15,8 +15,13 @@
 
     </ul>
     <input type="text" id="todoItem" name="todoItem">
-    <button onclick="AddItem()">Add Item</button>
-
+    <button id="addItemBtn" onclick="AddItem()">Add Item</button>
+    <script>
+        //clears text box after submit
+        document.getElementById('addItemBtn').addEventListener("click", function() {
+            document.getElementById('todoItem').value = '';
+        });
+    </script>
 </body>
 
 </html>
