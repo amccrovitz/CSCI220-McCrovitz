@@ -1,3 +1,68 @@
 ul li.checked {
     text-decoration: line-through;
 }
+
+h1 {
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 250px;
+}
+
+ul li {
+    position: relative;
+    padding: 18px 8px 12px 40px;
+    font-size: 40px;
+}
+
+header {
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 100px 150px;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    float: left;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#addItemBtn {
+    padding: 10px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+
+#clearListBtn {
+    padding: 10px;
+    width: 20%;
+    background: rgb(180, 49, 49);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    border: none;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}

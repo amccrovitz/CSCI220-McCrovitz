@@ -13,19 +13,25 @@
 </head>
 
 <body>
-    <!--Title-->
-    <h1>todo List</h1>
+    <header>
+        <!--Title-->
+        <h1>TODO LIST</h1>
+        <!--input text-->
+        <input type="text" id="todoItem" name="todoItem">
+        <!--uses addItem function on click event to store input-->
+        <button id="addItemBtn" onclick="addItem()">Add Item</button>
+        <!--uses clearList function to clear all stored list items-->
+        <button id="clearListBtn" onclick="clearList()">Clear List</button>
+    </header>
     <!--Todo list-->
     <!--on click it uses the done function to add a class of checked to the list item-->
     <ul onclick="done()">
     </ul>
 
 
-    <input type="text" id="todoItem" name="todoItem">
-    <!--uses addItem function on click event to store input-->
-    <button id="addItemBtn" onclick="addItem()">Add Item</button>
-    <!--uses clearList function to clear all stored list items-->
-    <button id="clearListBtn" onclick="clearList()">Clear List</button>
+
+
+
 
     <script>
         //clear box after submit
