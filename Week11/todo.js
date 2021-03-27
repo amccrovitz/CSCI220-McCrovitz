@@ -1,3 +1,5 @@
+const { listenerCount } = require("stream");
+
 //add list item from input text
 function addItem() {
 
@@ -5,6 +7,8 @@ function addItem() {
     var newLI = document.createElement('li');
     var inputTodo = document.getElementById("todoItem").value;
     var newTodo = document.createTextNode(inputTodo);
+
+
 
     //add to the bottom of the list
     newLI.appendChild(newTodo);
@@ -17,8 +21,4 @@ function addItem() {
 function clearList() {
     var row = document.getElementsByTagName("ul");
     row[0].innerHTML = "";
-}
-//sets the attribute class to checked for css
-function done() {
-    document.getElementsByTagName("LI")[0].setAttribute("class", "checked");
 }

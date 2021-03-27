@@ -25,7 +25,8 @@
     </header>
     <!--Todo list-->
     <!--on click it uses the done function to add a class of checked to the list item-->
-    <ul onclick="done()">
+
+    <ul>
     </ul>
 
 
@@ -38,6 +39,14 @@
         document.getElementById('addItemBtn').addEventListener("click", function() {
             document.getElementById('todoItem').value = '';
         });
+
+        //sets the attribute class to checked for css for target clicked on
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+            if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('done');
+            }
+        }, false);
     </script>
 </body>
 
