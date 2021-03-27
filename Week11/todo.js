@@ -1,5 +1,3 @@
-const { listenerCount } = require("stream");
-
 //add list item from input text
 function addItem() {
 
