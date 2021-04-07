@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Populating Table</title>
+    <link rel="stylesheet" href="./table.css" type="text/css">
+    <script src="./table.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+
+<body>
+    <form class="table-form">
+        <label for="name">Employee name: </label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="name">Employee title: </label>
+        <input type="text" name="title" id="title" required>
+
+        <label for="date">Hire date: </label>
+        <input type="date" name="date" id="date" required>
+
+        <input type="button" id="submit" value="Submit">
+    </form>
+    <script>
+        $('#submit').on('click', function() {
+            var eName = $('#name').value();
+            var eTitle = $('#title').value();
+            var eDate = $('#date').value();
+
+            var newRow = "<tr><td>" + eName + "</td><td>" + eTitle + "</td><td>" + eDate + "</td></tr>";
+            $("table tbody").append(newRow);
+        });
+    </script>
+
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <td>Employee name</td>
+                <td>Employee title</td>
+                <td>Hire date</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
