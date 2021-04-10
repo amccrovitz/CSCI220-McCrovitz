@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!--centered form for input to table-->
     <div id="tableInput" class="center">
     <form >
        
@@ -31,7 +32,7 @@
     <script>
         $(document).ready(function () {
             
- 
+ // on click store values and ammend to table
  $("#submit").click(function () {
    
     var eName = $('#name').val();
@@ -74,6 +75,7 @@ function getCellValue(row, index){ return $(row).children('td').eq(index).text()
 
 
     <br><br>
+    <!--Table for input-->
     <table id="eTable" class="center" >
         <thead>
             <tr>
