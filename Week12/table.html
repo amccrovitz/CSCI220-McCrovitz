@@ -4,13 +4,18 @@
 <head>
     <title>Populating Table</title>
     <link rel="stylesheet" href="./table.css" type="text/css">
-    <script src="./table.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src=
+"https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
 
+   
 </head>
 
 <body>
-    <form class="table-form">
+    <!--centered form for input to table-->
+    <div id="tableInput" class="center">
+    <form >
+       
         <label for="name">Employee name: </label>
         <input type="text" name="name" id="name" required>
 
@@ -21,25 +26,62 @@
         <input type="date" name="date" id="date" required>
 
         <input type="button" id="submit" value="Submit">
+        
     </form>
+</div>
     <script>
-        $('#submit').on('click', function() {
-            var eName = $('#name').value();
-            var eTitle = $('#title').value();
-            var eDate = $('#date').value();
+        $(document).ready(function () {
+            
+ // on click store values and ammend to table
+ $("#submit").click(function () {
+   
+    var eName = $('#name').val();
+    var eTitle = $('#title').val();
+    var eDate = $('#date').val();
 
-            var newRow = "<tr><td>" + eName + "</td><td>" + eTitle + "</td><td>" + eDate + "</td></tr>";
-            $("table tbody").append(newRow);
-        });
-    </script>
+    $('#name').val('');
+    $('#title').val('');
+    $('#date').val('');
+  
+    if ($.trim(eName) === "" || $.trim(eTitle) === "" || $.trim(eDate) === "" ) {
+        alert('Please make sure you filled out all of the fields');
+        return false;
+    }
+    else{
+        var newRow = "<tr><td>" + eName + "</td><td>" + eTitle + "</td><td>" + eDate + "</td></tr>";
+         $("table tbody").append(newRow);
+    }
+ });
+ //sort the table on click of the header
+ $('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+function comparer(index) {
+    return function(a, b) {
+        var valA = getCellValue(a, index), valB = getCellValue(b, index)
+        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+    }
+}
+function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+
+});
+
+
+</script>
+
 
     <br><br>
-    <table>
+    <!--Table for input-->
+    <table id="eTable" class="center" >
         <thead>
             <tr>
-                <td>Employee name</td>
-                <td>Employee title</td>
-                <td>Hire date</td>
+                <th>Employee name</th>
+                <th>Employee title</th>
+                <th style="padding-right: 35px;">Hire date</th>
             </tr>
         </thead>
         <tbody>
