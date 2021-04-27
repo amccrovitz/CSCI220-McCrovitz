@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./main.css" type="text/css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <!--Googlefont connect-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!--<script src="https://code.jquery.com/jquery-3.5.0.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<!--onload="ItemsListed()"-->
+
+<body>
+    <!--Sidebar to represent the total calculated amount-->
+    <div class="sidebar-total">
+        <br>
+        <h2 class="sidebarTitle">ORDER SUMMARY</h2>
+        <hr class="sidebarDivider">
+        <h2 class="sidebarTitle">CART TOTAL</h2>
+        <div id="totalPrice"></div>
+        <div class="button">submit</div>
+    </div>
+    <!--area for the represented listed cart items-->
+    <div class="cart-listing">
+        <h3 class="mainTitle">PRODUCT</h3>
+        <h3 class="mainTitle">PRICE</h3>
+        <h3 class="mainTitle">QTY</h3>
+        <h3 class="mainTitle">AMOUNT</h3>
+        <br>
+        <br>
+        <!--Below this section, it will be filled in by the javascript file-->
+        <script src="./items.js"></script>
+        <script src="./itemManipulation.js"></script>
+
+        <div id="content">
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
