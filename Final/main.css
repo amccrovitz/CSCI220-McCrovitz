@@ -28,6 +28,12 @@ body {
     padding-left: 20%;
 }
 
+#totalPrice {
+    font-weight: normal;
+    color: #f6f6f6;
+    padding-left: 15px;
+}
+
 .sidebarDivider {
     color: #52d6f4;
     width: 70%;
