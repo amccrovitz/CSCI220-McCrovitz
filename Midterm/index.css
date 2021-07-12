@@ -1,3 +1,13 @@
+/* line-draw */
+#star-svg {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 600px;
+    height: 1000px;
+    margin: -75px 0 0 -75px;
+    z-index: -1;
+  }
 /* slide animation */
 .slideanim {
     visibility:hidden;
@@ -34,16 +44,7 @@
     background-color: #232424;
     border: 5px solid #AE252D;
   }
-  #box-1 {
-
-    width: 50%;
-    height: 50%;
-  }
-  #box-2 {
  
-    width: 50%;
-    height: 50%;
-  }
 
 .top-left {
     position: absolute;
@@ -95,6 +96,7 @@ ul {
 body {
     background-color: #2a2c2c;
     margin: 0;
+    height: 5000px;
 }
 
 
@@ -125,16 +127,23 @@ h1,
 p {
     font-family: Helvetica;
 }
-
-.line {
+/* .line {
     position: absolute;
-    ;
     border-left: 5px solid #AE252D;
     height: 3200px;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
+} */
+.line {
+    position: absolute;
+    border-left: 5px solid #AE252D;
+    height: 100px;
+    left: 50%;
+    margin-left: -3px;
+   
 }
+
 
 /* Movie Boxes */
 .movie {
@@ -142,19 +151,16 @@ p {
     height: 300px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 30px;
+    margin-top: 100px;
     background-color: #232424;
     border: 5px solid #AE252D;
+   
 } 
-.movieReverse {
-    display: flex;
-    height: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
-    background-color: #232424;
-    border: 5px solid #AE252D;
+
+.reverse {
+ 
     flex-direction: row-reverse;
+    
 } 
 .movieInfoRight {
 
@@ -169,6 +175,16 @@ p {
     color: #DBDADA;
     margin-bottom: -6px;
 }
+#box-1 {
+
+    width: 50%;
+    height: 50%;
+  }
+  #box-2 {
+ 
+    width: 50%;
+    height: 50%;
+  }
 /* .movie {
     border: 5px solid #AE252D;
     margin-top: 175px;
