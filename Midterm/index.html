@@ -77,92 +77,90 @@
                 <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0209144/plotsummary" target="_blank">A man with short-term memory loss attempts to track down his wife's murderer.</a></p>
             </div>
         </div>
-        <<<<<<< HEAD=======< div class="line slideanim">
+        </div>
+        <!--Interstellar-->
+        <div class="movie reverse slideanim">
+            <div id="box-1">
+                <!--Watch by Sean D'Auria from the Noun Project-->
+                <a href="https://www.youtube.com/watch?v=2LqzF5WauAw" target="_blank">
+                    <image src="photos/watch.png" style="width: 100%;height: 300px; padding-top: 20px;">
+                </a>
             </div>
-            >>>>>>> 54cda406bdb36bbd113ec1244503e279ef60f285
-            <!--Interstellar-->
-            <div class="movie reverse slideanim">
-                <div id="box-1">
-                    <!--Watch by Sean D'Auria from the Noun Project-->
-                    <a href="https://www.youtube.com/watch?v=2LqzF5WauAw" target="_blank">
-                        <image src="photos/watch.png" style="width: 100%;height: 300px; padding-top: 20px;">
-                    </a>
-                </div>
-                <div id="box-2" style="text-align: left;">
-                    <h3 class="movieTitleRight">INTERSTELLAR</h3>
-                    <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0816692/plotsummary" target="_blank">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</a></p>
-                </div>
+            <div id="box-2" style="text-align: left;">
+                <h3 class="movieTitleRight">INTERSTELLAR</h3>
+                <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0816692/plotsummary" target="_blank">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</a></p>
             </div>
+        </div>
 
-            <!--Batman-->
-            <div class="movie slideanim">
-                <div id="box-1">
-                    <!--Bat by corpus delicti from the Noun Project-->
-                    <a href="https://www.youtube.com/watch?v=LDG9bisJEaI" target="_blank">
-                        <image src="photos/image3.png" style="width: 100%;height: 300px; padding-top: 20px;">
-                    </a>
-                </div>
-                <div id="box-2" style="text-align: left;">
-                    <h3 class="movieTitleRight">THE DARK KNIGHT</h3>
-                    <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0468569/plotsummary" target="_blank">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</a></p>
-                </div>
+        <!--Batman-->
+        <div class="movie slideanim">
+            <div id="box-1">
+                <!--Bat by corpus delicti from the Noun Project-->
+                <a href="https://www.youtube.com/watch?v=LDG9bisJEaI" target="_blank">
+                    <image src="photos/image3.png" style="width: 100%;height: 300px; padding-top: 20px;">
+                </a>
             </div>
-
-            <!--THE PRESTIGE-->
-            <div class="movie reverse slideanim">
-                <div id="box-1">
-                    <!--Top Hat by Dmitry Vasiliev from the Noun Project-->
-                    <a href="https://www.youtube.com/watch?v=RLtaA9fFNXU" target="_blank">
-                        <image src="photos/image0.png" style="width: 100%;height: 300px; padding-top: 20px;">
-                    </a>
-                </div>
-                <div id="box-2" style="text-align: left;">
-                    <h3 class="movieTitleRight">THE PRESTIGE</h3>
-                    <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0482571/plotsummary" target="_blank">After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.</a></p>
-                </div>
+            <div id="box-2" style="text-align: left;">
+                <h3 class="movieTitleRight">THE DARK KNIGHT</h3>
+                <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0468569/plotsummary" target="_blank">When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</a></p>
             </div>
-            <script>
-                // Get a reference to the <path>
-                var path = document.querySelector('#star-path');
+        </div>
 
-                // Get length of path... ~577px in this case
-                var pathLength = path.getTotalLength();
+        <!--THE PRESTIGE-->
+        <div class="movie reverse slideanim">
+            <div id="box-1">
+                <!--Top Hat by Dmitry Vasiliev from the Noun Project-->
+                <a href="https://www.youtube.com/watch?v=RLtaA9fFNXU" target="_blank">
+                    <image src="photos/image0.png" style="width: 100%;height: 300px; padding-top: 20px;">
+                </a>
+            </div>
+            <div id="box-2" style="text-align: left;">
+                <h3 class="movieTitleRight">THE PRESTIGE</h3>
+                <p class="movieInfoRight"><a class="infoLink" href="https://www.imdb.com/title/tt0482571/plotsummary" target="_blank">After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.</a></p>
+            </div>
+        </div>
+        <script>
+            // Get a reference to the <path>
+            var path = document.querySelector('#star-path');
 
-                // Make very long dashes (the length of the path itself)
-                path.style.strokeDasharray = pathLength + ' ' + pathLength;
+            // Get length of path... ~577px in this case
+            var pathLength = path.getTotalLength();
 
-                // Offset the dashes so the it appears hidden entirely
-                path.style.strokeDashoffset = pathLength;
+            // Make very long dashes (the length of the path itself)
+            path.style.strokeDasharray = pathLength + ' ' + pathLength;
 
-                // Jake Archibald says so
-                // https://jakearchibald.com/2013/animated-line-drawing-svg/
-                path.getBoundingClientRect();
+            // Offset the dashes so the it appears hidden entirely
+            path.style.strokeDashoffset = pathLength;
 
-                // When the page scrolls...
-                window.addEventListener("scroll", function(e) {
+            // Jake Archibald says so
+            // https://jakearchibald.com/2013/animated-line-drawing-svg/
+            path.getBoundingClientRect();
 
-                    // What % down is it? 
-                    // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
-                    // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
-                    var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            // When the page scrolls...
+            window.addEventListener("scroll", function(e) {
 
-                    // Length to offset the dashes
-                    var drawLength = pathLength * scrollPercentage;
+                // What % down is it? 
+                // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
+                // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
+                var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-                    // Draw in reverse
-                    path.style.strokeDashoffset = pathLength - drawLength;
+                // Length to offset the dashes
+                var drawLength = pathLength * scrollPercentage;
 
-                    // When complete, remove the dash array, otherwise shape isn't quite sharp
-                    // Accounts for fuzzy math
-                    if (scrollPercentage >= 0.99) {
-                        path.style.strokeDasharray = "none";
+                // Draw in reverse
+                path.style.strokeDashoffset = pathLength - drawLength;
 
-                    } else {
-                        path.style.strokeDasharray = pathLength + ' ' + pathLength;
-                    }
+                // When complete, remove the dash array, otherwise shape isn't quite sharp
+                // Accounts for fuzzy math
+                if (scrollPercentage >= 0.99) {
+                    path.style.strokeDasharray = "none";
 
-                });
-            </script>
+                } else {
+                    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+                }
+
+            });
+        </script>
     </main>
 
 </body>
