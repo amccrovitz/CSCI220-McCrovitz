@@ -1,4 +1,5 @@
 /* line-draw */
+
 #star-svg {
     position: fixed;
     top: 0%;
@@ -7,33 +8,39 @@
     height: 1000px;
     margin: -75px 0 0 -75px;
     z-index: -1;
-  }
-/* slide animation */
-.slideanim {
-    visibility:hidden;
-    visibility:visible\9;/*For old IE browsers IE6-8 */
 }
-.slideanim.slide {                  
-    visibility: visible;                  
+
+
+/* slide animation */
+
+.slideanim {
+    visibility: hidden;
+    visibility: visible\9;
+    /*For old IE browsers IE6-8 */
+}
+
+.slideanim.slide {
+    visibility: visible;
     animation: slide 1s;
 }
+
 .slideanim::after {
     /* useful when its child elements are float:left; */
     content: "";
     display: table;
     clear: both;
 }
+
 @keyframes slide {
     0% {
         opacity: 0;
         transform: translateY(50%);
-    } 
+    }
     100% {
         opacity: 1;
         transform: translateY(0);
-    } 
+    }
 }
-
 
 #box-container {
     display: flex;
@@ -43,8 +50,7 @@
     margin-top: 30px;
     background-color: #232424;
     border: 5px solid #AE252D;
-  }
- 
+}
 
 .top-left {
     position: absolute;
@@ -96,19 +102,8 @@ ul {
 body {
     background-color: #2a2c2c;
     margin: 0;
-    height: 5000px;
+    height: 4000px;
 }
-
-
-/* 
-.movieReverse {
-    border: 5px solid #AE252D;
-    margin-top: 170px;
-    margin-left: 100px;
-    background-color: #232424;
-    padding-right: 260px;
-    margin-right: 100px;
-} */
 
 .titleText {
     font-size: 4em;
@@ -127,25 +122,10 @@ h1,
 p {
     font-family: Helvetica;
 }
-/* .line {
-    position: absolute;
-    border-left: 5px solid #AE252D;
-    height: 3200px;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-} */
-.line {
-    position: absolute;
-    border-left: 5px solid #AE252D;
-    height: 100px;
-    left: 50%;
-    margin-left: -3px;
-   
-}
 
 
 /* Movie Boxes */
+
 .movie {
     display: flex;
     height: 300px;
@@ -154,20 +134,18 @@ p {
     margin-top: 100px;
     background-color: #232424;
     border: 5px solid #AE252D;
-   
-} 
+}
 
 .reverse {
- 
     flex-direction: row-reverse;
-    
-} 
-.movieInfoRight {
+}
 
+.movieInfoRight {
     color: #DBDADA;
     line-height: 1.6;
     padding-left: 20px;
 }
+
 .movieTitleRight {
     font-size: 30pt;
     font-family: Helvetica;
@@ -175,105 +153,15 @@ p {
     color: #DBDADA;
     margin-bottom: -6px;
 }
+
 #box-1 {
-
     width: 50%;
     height: 50%;
-  }
-  #box-2 {
- 
+}
+
+#box-2 {
     width: 50%;
     height: 50%;
-  }
-/* .movie {
-    border: 5px solid #AE252D;
-    margin-top: 175px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color: #232424;
-} */
-/* .movieTitleRight {
-    font-size: 30pt;
-    font-family: Helvetica;
-    margin-bottom: -6px;
-    padding-left: 220px;
-    color: #DBDADA;
-}
-
-.movieInfoRight {
-    word-wrap: break-word;
-    color: #DBDADA;
-    padding-left: 220px;
-    line-height: 1.6;
-    clear: right;
-}
-
-.movieInfoLeft {
-    word-wrap: break-word;
-    color: #DBDADA;
-    line-height: 1.6;
-    max-width: 345px;
-    padding-left: 90px;
-}
-
-.movieLogo {
-    margin-top: 30px;
-} */
-
-.movieLogoRight {
-    padding-left: 95px;
-    margin: 30px;
-}
-
-.column {
-    display: flex;
-}
-
-.row {
-    flex: 1;
-}
-
-#interstellarTitle {
-    font-size: 30pt;
-    font-family: Helvetica;
-    margin-bottom: -6px;
-    color: #DBDADA;
-    word-wrap: normal;
-    padding-left: 150px;
-}
-
-#prestigeTitle {
-    font-size: 30pt;
-    font-family: Helvetica;
-    margin-bottom: -6px;
-    color: #DBDADA;
-    word-wrap: normal;
-    padding-left: 130px;
-}
-
-#tenetTitle {
-    font-size: 30pt;
-    font-family: Helvetica;
-    margin-bottom: -6px;
-    color: #DBDADA;
-    word-wrap: normal;
-    padding-left: 300px;
-}
-
-.movieInfoInterstellar {
-    word-wrap: break-word;
-    color: #DBDADA;
-    line-height: 1.6;
-    max-width: 345px;
-    padding-left: 110px;
-}
-
-.movieInfoPrestige {
-    word-wrap: break-word;
-    color: #DBDADA;
-    line-height: 1.6;
-    max-width: 345px;
-    padding-left: 80px;
 }
 
 .infoLink,
